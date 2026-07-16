@@ -1,0 +1,38 @@
+# --- Root/General ---
+.DS_Store
+node_modules/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Client (React) ---
+client/node_modules/
+client/dist/
+client/build/
+client/.eslintcache
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+
+# --- Server (Node/Express) ---
+server/node_modules/
+server/.env
+server/npm-debug.log*
+server/logs/
+server/*.log
+
+# --- Database (MySQL) ---
+# Ignore local database dumps or configs
+*.sql
+server/config/db_local.js
+
+# --- IDE/Tools ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
