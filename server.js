@@ -19,6 +19,11 @@ app.use("/api/data", ServiceRouter);
 app.use("/api/admin", AdminRouter);
 
 app.use(errorMiddleware);
+
+app.get("/", (req, res) => {
+  res.send("Welcome.");
+});
+
 database().then(() => {
   app.listen(Port, () => {
     console.log(`App is listening on the Port: ${Port}`);
